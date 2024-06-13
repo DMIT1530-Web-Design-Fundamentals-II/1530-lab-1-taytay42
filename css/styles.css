@@ -29,11 +29,16 @@ header {
 	padding: 1rem 1rem;
 	text-align: center;
 	background-color: #c54b3c;
+	margin-bottom: 1.5rem;
 }
 
 h2 {
 	margin-left: 5.5rem;
-	margin-top: 3rem;
+	font-size: 1.875rem;
+}
+
+h3 {
+	font-size: 1.5rem;
 }
 
 .wide-flex {
@@ -54,6 +59,7 @@ h2 {
 section {
 	background-color: #fff;
 	color: #2b2e37;
+	border: 1px;
 	padding: 1rem;
 	width: 31.5rem;
 }
@@ -67,7 +73,8 @@ aside {
 	background-color: #2b2e37;
 	color: #fff;
 	width: 18.75rem;
-	padding: 0.5rem
+	padding: 1rem;
+	border: 1px;
 }
 
 footer {
@@ -75,14 +82,32 @@ footer {
 	color: #fff;
 	height: 4rem;
 	margin-top: 4rem;
-	padding: 1rem;
+	padding: 2rem;
 	text-align: center;
 }
 
 a {
 	color: #fff;
 }
+
 /* Mobile View */
+@media screen and (max-width: 48rem) {
+	section {
+		margin: 1rem 1rem
+	}
+	.wide-flex {
+        flex-direction: column;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    img {
+        width: 40%;
+        margin-right: 1rem;
+}
+}
 
 
 
